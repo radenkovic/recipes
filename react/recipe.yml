@@ -6,7 +6,8 @@ description: |
 files:
   - path: .eslintrc.js
     strategy: skip-if-exists
-    destination: .eslintrc.js
+    destination: tmp/.eslintrc.js
       
   - path: package.json
     strategy: merge
+    destination: tmp/package.json
