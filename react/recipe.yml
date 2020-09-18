@@ -1,0 +1,13 @@
+version: "1.0.0"
+
+name: React
+description: |
+  This will install some stuff and scaffold react project for create-react-app.
+files:
+  - path: .eslintrc.js
+    strategy: skip-if-exists
+    destination: .eslintrc.js
+      
+  - path: .env
+    strategy: replace
+    destination: .env
