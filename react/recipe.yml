@@ -11,3 +11,7 @@ files:
   - path: package.json
     strategy: merge
     destination: tmp/package.json
+
+  - path: .jsconfig.json
+    strategy: merge
+    destination: tmp/.jsconfig.json
