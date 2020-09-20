@@ -1,0 +1,10 @@
+version: "1.0.0"
+
+name: Publish to npm
+description: | 
+  Adds github workflow for deploying to NPM. You need "NPM_AUTH_TOKEN" in secrets.
+
+files:
+  - path: npm-publish.yml
+    strategy: skip-if-exists
+    destination: .github/workflows/npm-publish.yml
