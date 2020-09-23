@@ -10,3 +10,6 @@ files:
     
   - path: package.json
     strategy: merge
+    
+  - path: cypress.json
+    strategy: skip-if-exists
