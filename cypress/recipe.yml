@@ -1,0 +1,12 @@
+version: "1.0.0"
+
+name: Run cypress tests
+description: | 
+  Adds cypress test suite. Run yarn after installing
+files:
+  - path: cypress.yml
+    strategy: skip-if-exists
+    destination: .github/workflows/cypress.yml
+    
+  - path: package.json
+    strategy: merge
